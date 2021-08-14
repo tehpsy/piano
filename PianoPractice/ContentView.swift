@@ -6,7 +6,6 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Color.white.edgesIgnoringSafeArea(.all)
                 VStack() {
                     VStack(alignment: .leading) {
                         Text("\(scale.root.text) \(scale.mode.rawValue)")
