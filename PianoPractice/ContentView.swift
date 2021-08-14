@@ -1,16 +1,28 @@
-//
-//  ContentView.swift
-//  PianoPractice
-//
-//  Created by James Baxter on 14/08/2021.
-//
-
 import SwiftUI
 
 struct ContentView: View {
+    @State var scale = Scale.generate()
+
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            ZStack {
+                Color.white.edgesIgnoringSafeArea(.all)
+                VStack() {
+                    VStack(alignment: .leading) {
+                        Text("\(scale.root.text) \(scale.mode.rawValue)")
+                        NotesList(scale: $scale)
+                        Text("\(scale.octaves) octaves")
+                    }
+
+                    Spacer()
+                    Button("Next") {
+                        scale = Scale.generate()
+                    }
+                }
+                .padding()
+            }
+            .navigationTitle("Piano Practice")
+        }
     }
 }
 
