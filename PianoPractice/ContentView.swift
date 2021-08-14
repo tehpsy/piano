@@ -7,6 +7,8 @@ struct ContentView: View {
         NavigationView {
             ZStack {
                 VStack() {
+                    Spacer()
+
                     VStack(alignment: .leading) {
                         Text("\(scale.root.text) \(scale.mode.rawValue)")
                         NotesList(scale: $scale)
@@ -14,9 +16,18 @@ struct ContentView: View {
                     }
 
                     Spacer()
-                    Button("Next") {
+
+                    Button(action: {
                         scale = Scale.generate()
-                    }
+                    }, label: {
+                        Image(systemName: "arrow.clockwise.circle")
+                        Text("Next")
+                    })
+                    .padding()
+                    .frame(width: 300)
+                    .background(Color.orange)
+                    .foregroundColor(.black)
+                    .clipShape(Capsule())
                 }
                 .padding()
             }
