@@ -28,11 +28,15 @@ struct ContentView: View {
 
                     Spacer()
 
-                    NextButton(scale: $scale)
+                    HStack() {
+                        Spacer()
+                        NextButton(scale: $scale)
+                        Spacer()
+                    }
                 }
                 .padding()
             }
-            .navigationTitle("Piano Practice")
+            .navigationTitle("UpScale")
         }
     }
 }
