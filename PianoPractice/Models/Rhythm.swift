@@ -1,5 +1,5 @@
 enum Rhythm: Random {
-    case single(timeSignature: TimeSignature, pause: Int)
+    case single(timeSignature: TimeSignature, pause: Int?)
     case poly(leftTimeSignature: TimeSignature, rightTimeSignature: TimeSignature)
 
     static func random() -> Self {

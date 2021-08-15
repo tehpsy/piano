@@ -19,11 +19,49 @@ struct HandView: View {
                     }
                 }
 
+                if let rhythmText = self.rhythmText {
+                    Text(rhythmText)
+                }
+
+                if let pauseText = self.pauseText {
+                    Text(pauseText)
+                }
+
                 if let dynamics = hand.dynamics {
                     Text(dynamics.rawValue)
                 }
             }
         }
+    }
+
+    var rhythmText: String? {
+        switch scale.rhythm {
+        case let .single(timeSignature, _):
+            switch timeSignature {
+            case .fourFour: return nil
+            case .triplets: return "Triplets"
+            }
+
+        case let .poly(left, right):
+            switch (left, right) {
+            case (.fourFour, .fourFour):
+                return nil
+            case (.triplets, .fourFour):
+                return handType == .left ? "Triplets" : "-"
+            case (.fourFour, .triplets):
+                return handType == .right ? "Triplets" : "-"
+            case (.triplets, .triplets):
+                return "Triplets"
+            }
+        }
+    }
+
+    var pauseText: String? {
+        guard
+            case let .single(_, pause) = scale.rhythm,
+            let pause = pause
+        else { return nil }
+        return "Pause on \(pause + 1)"
     }
 }
 
