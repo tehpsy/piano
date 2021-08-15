@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		770BD16626C8AA8F00E8CD4F /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770BD16526C8AA8F00E8CD4F /* Color.swift */; };
+		770BD16826C8AAA400E8CD4F /* HandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770BD16726C8AAA400E8CD4F /* HandView.swift */; };
+		770BD16A26C8AAB800E8CD4F /* NextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770BD16926C8AAB800E8CD4F /* NextButton.swift */; };
 		774AD97B26C7459B00B41E6A /* PianoPracticeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774AD97A26C7459B00B41E6A /* PianoPracticeApp.swift */; };
 		774AD97D26C7459B00B41E6A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774AD97C26C7459B00B41E6A /* ContentView.swift */; };
 		774AD97F26C7459D00B41E6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 774AD97E26C7459D00B41E6A /* Assets.xcassets */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		770BD16526C8AA8F00E8CD4F /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		770BD16726C8AAA400E8CD4F /* HandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandView.swift; sourceTree = "<group>"; };
+		770BD16926C8AAB800E8CD4F /* NextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextButton.swift; sourceTree = "<group>"; };
 		774AD97726C7459B00B41E6A /* PianoPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PianoPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		774AD97A26C7459B00B41E6A /* PianoPracticeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoPracticeApp.swift; sourceTree = "<group>"; };
 		774AD97C26C7459B00B41E6A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,13 +65,16 @@
 		774AD97926C7459B00B41E6A /* PianoPractice */ = {
 			isa = PBXGroup;
 			children = (
-				774AD97A26C7459B00B41E6A /* PianoPracticeApp.swift */,
-				774AD97C26C7459B00B41E6A /* ContentView.swift */,
-				774AD98B26C75CF700B41E6A /* NotesList.swift */,
 				774AD97E26C7459D00B41E6A /* Assets.xcassets */,
+				770BD16526C8AA8F00E8CD4F /* Color.swift */,
+				774AD97C26C7459B00B41E6A /* ContentView.swift */,
+				770BD16726C8AAA400E8CD4F /* HandView.swift */,
 				774AD98326C7459D00B41E6A /* Info.plist */,
-				774AD98026C7459D00B41E6A /* Preview Content */,
 				774AD98926C75CE300B41E6A /* Model.swift */,
+				770BD16926C8AAB800E8CD4F /* NextButton.swift */,
+				774AD98B26C75CF700B41E6A /* NotesList.swift */,
+				774AD97A26C7459B00B41E6A /* PianoPracticeApp.swift */,
+				774AD98026C7459D00B41E6A /* Preview Content */,
 			);
 			path = PianoPractice;
 			sourceTree = "<group>";
@@ -147,11 +156,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				770BD16826C8AAA400E8CD4F /* HandView.swift in Sources */,
 				774AD98A26C75CE300B41E6A /* Model.swift in Sources */,
 				774AD97D26C7459B00B41E6A /* ContentView.swift in Sources */,
 				774AD98E26C75D4700B41E6A /* Random.swift in Sources */,
 				774AD97B26C7459B00B41E6A /* PianoPracticeApp.swift in Sources */,
 				774AD98C26C75CF700B41E6A /* NotesList.swift in Sources */,
+				770BD16A26C8AAB800E8CD4F /* NextButton.swift in Sources */,
+				770BD16626C8AA8F00E8CD4F /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

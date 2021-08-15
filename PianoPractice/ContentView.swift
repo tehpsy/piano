@@ -19,6 +19,13 @@ struct ContentView: View {
                     Text("\(scale.octaves) octaves")
                         .padding()
 
+                    Divider()
+
+                    HStack {
+                        HandView(hand: $scale.leftHand, title: "Left")
+                        HandView(hand: $scale.rightHand, title: "Right")
+                    }
+
                     Spacer()
 
                     NextButton(scale: $scale)
@@ -30,25 +37,8 @@ struct ContentView: View {
     }
 }
 
-struct NextButton: View {
-    @Binding var scale: Scale
-
-    var body: some View {
-        Button(action: {
-            scale = Scale.generate()
-        }, label: {
-            Image(systemName: "arrow.clockwise.circle")
-            Text("Next")
-        })
-        .padding()
-        .frame(width: 300)
-        .background(Color.orange)
-        .foregroundColor(.black)
-        .clipShape(Capsule())
-    }
-}
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView().preferredColorScheme(.dark)
     }
 }

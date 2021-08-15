@@ -42,14 +42,54 @@ enum Mode: String, CaseIterable, Random {
     }
 }
 
-enum Style: CaseIterable, Random {
-    case legato
-    case staccato
+enum Style: String, CaseIterable, Random {
+    case legato = "Legato"
+    case staccato = "Staccato"
 }
 
 struct Hand {
-    let offset: Int
+    let intervalOffset: Int
     let style: Style
+    let rhythm: Rhythm
+    let dynamics: Dynamics?
+
+    static func random() -> Self {
+        return Hand(
+            intervalOffset: Int.random(in: Interval.range),
+            style: Style.random(),
+            rhythm: Rhythm.random(),
+            dynamics: Dynamics.random()
+        )
+    }
+}
+
+enum Rhythm: Describable, CaseIterable, Random {
+    case c_c_c_c
+    case m_c_c
+    case c_m_c
+    case c_c_m
+    case c_c_c
+
+    var description: String {
+        switch self {
+        case .c_c_c_c: return "4/4"
+        case .m_c_c: return "4/4 M-C-C"
+        case .c_m_c: return "4/4 C-M-C"
+        case .c_c_m: return "4/4 C-C-M"
+        case .c_c_c: return "3/4"
+        }
+    }
+}
+
+enum Dynamics: String, CaseIterable, Random {
+    case crescendo = "Crescendo"
+    case diminuendo = "Diminuendo"
+}
+
+enum Interval {
+    static var range = Range(0...7)
+}
+
 protocol Describable {
     var description: String { get }
 }
@@ -75,30 +115,18 @@ struct Key: Describable {
 struct Scale {
     let key: Key
     let octaves: Int
-    let leftHand: Hand?
-    let rightHand: Hand?
+    var leftHand: Hand
+    var rightHand: Hand
 
     static func generate() -> Scale {
         return Scale(
             key: Key.random(),
             octaves: Int.random(in: (2...4)),
-            leftHand: Hand(offset: 0, style: .legato),
-            rightHand: Hand(offset: 0, style: .legato)
+            leftHand: Hand.random(),
+            rightHand: Hand.random()
         )
     }
 }
-
-//    enum Rhythm {
-//        case c_c_c_c
-//        case m_c_c
-//        case c_m_c
-//        case c_c_m
-//    }
-//
-//    enum Dynamics {
-//        case crescendo
-//        case diminuendo
-//    }
 //
 //    struct Arpeggio {
 //    }
