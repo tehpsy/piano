@@ -5,7 +5,7 @@ struct NotesList: View {
 
     var body: some View {
         HStack {
-            ForEach(scale.notes, id: \.rawValue) { note in
+            ForEach(scale.key.notes, id: \.rawValue) { note in
                 Text("\(note.text)")
             }
         }

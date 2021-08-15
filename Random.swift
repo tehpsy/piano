@@ -1,6 +1,6 @@
-protocol Random where Self: CaseIterable {
+protocol Random {
     static func random() -> Self
 }
-extension Random {
+extension Random where Self: CaseIterable {
     static func random() -> Self { Self.allCases.randomElement()! }
 }

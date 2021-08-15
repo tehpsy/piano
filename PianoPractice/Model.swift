@@ -15,16 +15,16 @@ enum Note: Int, CaseIterable, Random {
     var text: String {
         switch self {
         case .C: return "C"
-        case .Db: return "Db"
+        case .Db: return "D♭"
         case .D: return "D"
-        case .Eb: return "Eb"
+        case .Eb: return "E♭"
         case .E: return "E"
         case .F: return "F"
-        case .Gb: return "Gb"
+        case .Gb: return "G♭"
         case .G: return "G"
-        case .Ab: return "Ab"
+        case .Ab: return "A♭"
         case .A: return "A"
-        case .Bb: return "Bb"
+        case .Bb: return "B♭"
         case .B: return "B"
         }
     }
@@ -42,7 +42,7 @@ enum Mode: String, CaseIterable, Random {
     }
 }
 
-enum Style {
+enum Style: CaseIterable, Random {
     case legato
     case staccato
 }
@@ -50,23 +50,37 @@ enum Style {
 struct Hand {
     let offset: Int
     let style: Style
+protocol Describable {
+    var description: String { get }
 }
 
-struct Scale {
+struct Key: Describable {
     let root: Note
     let mode: Mode
-    let octaves: Int
-    let leftHand: Hand?
-    let rightHand: Hand?
 
     var notes: [Note] {
         return mode.intervals.map { root + Note.allCases[$0] }
     }
 
+    static func random() -> Self {
+        return Key(
+            root: Note.random(),
+            mode: Mode.random()
+        )
+    }
+
+    var description: String { "\(root.text) \(mode.rawValue)" }
+}
+
+struct Scale {
+    let key: Key
+    let octaves: Int
+    let leftHand: Hand?
+    let rightHand: Hand?
+
     static func generate() -> Scale {
         return Scale(
-            root: Note.random(),
-            mode: Mode.random(),
+            key: Key.random(),
             octaves: Int.random(in: (2...4)),
             leftHand: Hand(offset: 0, style: .legato),
             rightHand: Hand(offset: 0, style: .legato)
