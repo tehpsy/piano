@@ -5,7 +5,7 @@ struct NextButton: View {
 
     var body: some View {
         Button(action: {
-            scale = Scale.generate()
+            scale = Scale.random()
         }, label: {
             Image(systemName: "arrow.clockwise.circle")
             Text("Next")

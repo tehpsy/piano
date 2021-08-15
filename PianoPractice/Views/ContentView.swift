@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var scale = Scale.generate()
+    @State var scale = Scale.random()
 
     var body: some View {
         NavigationView {
@@ -22,8 +22,8 @@ struct ContentView: View {
                     Divider()
 
                     HStack {
-                        HandView(hand: $scale.leftHand, title: "Left")
-                        HandView(hand: $scale.rightHand, title: "Right")
+                        HandView(hand: $scale.leftHand, scale: $scale, handType: .left)
+                        HandView(hand: $scale.rightHand, scale: $scale, handType: .right)
                     }
 
                     Spacer()

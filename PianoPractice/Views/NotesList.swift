@@ -14,7 +14,7 @@ struct NotesList: View {
 
 struct NotesList_Previews: PreviewProvider {
     static var previews: some View {
-        NotesList(scale: .constant(Scale.generate()))
+        NotesList(scale: .constant(Scale.random()))
     }
 }
 

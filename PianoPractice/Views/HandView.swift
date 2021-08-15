@@ -2,16 +2,21 @@ import SwiftUI
 
 struct HandView: View {
     @Binding var hand: Hand
-    @State var title: String
+    @Binding var scale: Scale
+    @State var handType: HandType
 
     var body: some View {
         VStack {
-            Text(title)
+            Text(handType.rawValue)
             List {
                 Text(hand.articulation.rawValue)
 
-                if hand.intervalOffset != 0 {
-                    Text("Interval \(hand.intervalOffset + 1)")
+                if let interval = scale.intervalOffset {
+                    if interval.handType == handType {
+                        Text("Interval \(interval.offset + 1)")
+                    } else {
+                        Text("-")
+                    }
                 }
 
                 if let dynamics = hand.dynamics {
@@ -26,7 +31,8 @@ struct HandView_Previews: PreviewProvider {
     static var previews: some View {
         HandView(
             hand: .constant(Hand.random()),
-            title: "Foo"
+            scale: .constant(Scale.random()),
+            handType: .left
         )
         .preferredColorScheme(.dark)
     }
