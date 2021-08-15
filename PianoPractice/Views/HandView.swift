@@ -8,8 +8,7 @@ struct HandView: View {
         VStack {
             Text(title)
             List {
-                Text(hand.style.rawValue)
-                Text(hand.rhythm.description)
+                Text(hand.articulation.rawValue)
 
                 if hand.intervalOffset != 0 {
                     Text("Interval \(hand.intervalOffset + 1)")
