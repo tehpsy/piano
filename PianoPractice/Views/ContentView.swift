@@ -21,9 +21,8 @@ struct ContentView: View {
 
                     Divider()
 
-                    HStack {
-                        HandView(hand: $scale.leftHand, scale: $scale, handType: .left)
-                        HandView(hand: $scale.rightHand, scale: $scale, handType: .right)
+                    if !scale.modifiers.isEmpty {
+                        ModifiersListView(scale: $scale)
                     }
 
                     Spacer()
