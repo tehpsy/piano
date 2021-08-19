@@ -21,6 +21,9 @@
 		770BD17F26C8B49D00E8CD4F /* Articulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770BD17E26C8B49D00E8CD4F /* Articulation.swift */; };
 		770BD18126C8B4AE00E8CD4F /* Dynamics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770BD18026C8B4AE00E8CD4F /* Dynamics.swift */; };
 		770BD18326C8B4BB00E8CD4F /* Interval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770BD18226C8B4BB00E8CD4F /* Interval.swift */; };
+		770BD18526C915F000E8CD4F /* PianoKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770BD18426C915F000E8CD4F /* PianoKey.swift */; };
+		770BD18726C9165B00E8CD4F /* RoundedCornerShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770BD18626C9165B00E8CD4F /* RoundedCornerShape.swift */; };
+		770BD18926C9175500E8CD4F /* PianoOctave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770BD18826C9175500E8CD4F /* PianoOctave.swift */; };
 		774AD97B26C7459B00B41E6A /* PianoPracticeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774AD97A26C7459B00B41E6A /* PianoPracticeApp.swift */; };
 		774AD97D26C7459B00B41E6A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774AD97C26C7459B00B41E6A /* ContentView.swift */; };
 		774AD97F26C7459D00B41E6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 774AD97E26C7459D00B41E6A /* Assets.xcassets */; };
@@ -44,6 +47,9 @@
 		770BD17E26C8B49D00E8CD4F /* Articulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Articulation.swift; sourceTree = "<group>"; };
 		770BD18026C8B4AE00E8CD4F /* Dynamics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamics.swift; sourceTree = "<group>"; };
 		770BD18226C8B4BB00E8CD4F /* Interval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interval.swift; sourceTree = "<group>"; };
+		770BD18426C915F000E8CD4F /* PianoKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoKey.swift; sourceTree = "<group>"; };
+		770BD18626C9165B00E8CD4F /* RoundedCornerShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerShape.swift; sourceTree = "<group>"; };
+		770BD18826C9175500E8CD4F /* PianoOctave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoOctave.swift; sourceTree = "<group>"; };
 		774AD97726C7459B00B41E6A /* PianoPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PianoPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		774AD97A26C7459B00B41E6A /* PianoPracticeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoPracticeApp.swift; sourceTree = "<group>"; };
 		774AD97C26C7459B00B41E6A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,6 +78,9 @@
 				770BD16726C8AAA400E8CD4F /* HandView.swift */,
 				770BD16926C8AAB800E8CD4F /* NextButton.swift */,
 				774AD98B26C75CF700B41E6A /* NotesList.swift */,
+				770BD18426C915F000E8CD4F /* PianoKey.swift */,
+				770BD18826C9175500E8CD4F /* PianoOctave.swift */,
+				770BD18626C9165B00E8CD4F /* RoundedCornerShape.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -215,12 +224,15 @@
 				770BD16826C8AAA400E8CD4F /* HandView.swift in Sources */,
 				770BD17926C8B41000E8CD4F /* Rhythm.swift in Sources */,
 				770BD17326C8B3C800E8CD4F /* Key.swift in Sources */,
+				770BD18526C915F000E8CD4F /* PianoKey.swift in Sources */,
 				770BD17726C8B40200E8CD4F /* Hand.swift in Sources */,
 				774AD97D26C7459B00B41E6A /* ContentView.swift in Sources */,
 				774AD98E26C75D4700B41E6A /* Random.swift in Sources */,
 				770BD18326C8B4BB00E8CD4F /* Interval.swift in Sources */,
 				770BD18126C8B4AE00E8CD4F /* Dynamics.swift in Sources */,
 				774AD97B26C7459B00B41E6A /* PianoPracticeApp.swift in Sources */,
+				770BD18926C9175500E8CD4F /* PianoOctave.swift in Sources */,
+				770BD18726C9165B00E8CD4F /* RoundedCornerShape.swift in Sources */,
 				770BD16F26C8B39F00E8CD4F /* Note.swift in Sources */,
 				770BD17126C8B3B800E8CD4F /* Mode.swift in Sources */,
 				774AD98C26C75CF700B41E6A /* NotesList.swift in Sources */,
