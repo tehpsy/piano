@@ -14,12 +14,9 @@
 		770BD17126C8B3B800E8CD4F /* Mode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770BD17026C8B3B800E8CD4F /* Mode.swift */; };
 		770BD17326C8B3C800E8CD4F /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770BD17226C8B3C800E8CD4F /* Key.swift */; };
 		770BD17526C8B3D600E8CD4F /* Describable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770BD17426C8B3D600E8CD4F /* Describable.swift */; };
-		770BD17726C8B40200E8CD4F /* Hand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770BD17626C8B40200E8CD4F /* Hand.swift */; };
 		770BD17926C8B41000E8CD4F /* Rhythm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770BD17826C8B41000E8CD4F /* Rhythm.swift */; };
 		770BD17B26C8B42300E8CD4F /* Scale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770BD17A26C8B42300E8CD4F /* Scale.swift */; };
 		770BD17D26C8B43500E8CD4F /* TimeSignature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770BD17C26C8B43500E8CD4F /* TimeSignature.swift */; };
-		770BD17F26C8B49D00E8CD4F /* Articulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770BD17E26C8B49D00E8CD4F /* Articulation.swift */; };
-		770BD18126C8B4AE00E8CD4F /* Dynamics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770BD18026C8B4AE00E8CD4F /* Dynamics.swift */; };
 		770BD18326C8B4BB00E8CD4F /* Interval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770BD18226C8B4BB00E8CD4F /* Interval.swift */; };
 		770BD18526C915F000E8CD4F /* PianoKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770BD18426C915F000E8CD4F /* PianoKey.swift */; };
 		770BD18726C9165B00E8CD4F /* RoundedCornerShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770BD18626C9165B00E8CD4F /* RoundedCornerShape.swift */; };
@@ -27,6 +24,13 @@
 		770BD22726CDDA1100E8CD4F /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770BD22626CDDA1100E8CD4F /* Modifiers.swift */; };
 		770BD22926CDDBF800E8CD4F /* ModifierView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770BD22826CDDBF800E8CD4F /* ModifierView.swift */; };
 		770BD22B26CDDC9700E8CD4F /* ModifierHandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770BD22A26CDDC9700E8CD4F /* ModifierHandView.swift */; };
+		770BD22D26CE199B00E8CD4F /* ScaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770BD22C26CE199B00E8CD4F /* ScaleView.swift */; };
+		770BD23126CE205000E8CD4F /* Arpeggio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770BD23026CE205000E8CD4F /* Arpeggio.swift */; };
+		770BD23326CE209900E8CD4F /* DisplayMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770BD23226CE209900E8CD4F /* DisplayMode.swift */; };
+		770BD23526CE20AD00E8CD4F /* Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770BD23426CE20AD00E8CD4F /* Root.swift */; };
+		770BD23726CE210500E8CD4F /* HandType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770BD23626CE210500E8CD4F /* HandType.swift */; };
+		770BD23926CE26FE00E8CD4F /* DisplayModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770BD23826CE26FE00E8CD4F /* DisplayModeView.swift */; };
+		770BD23B26CE2A0800E8CD4F /* ArpeggioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770BD23A26CE2A0800E8CD4F /* ArpeggioView.swift */; };
 		774AD97B26C7459B00B41E6A /* PianoPracticeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774AD97A26C7459B00B41E6A /* PianoPracticeApp.swift */; };
 		774AD97D26C7459B00B41E6A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774AD97C26C7459B00B41E6A /* ContentView.swift */; };
 		774AD97F26C7459D00B41E6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 774AD97E26C7459D00B41E6A /* Assets.xcassets */; };
@@ -43,12 +47,9 @@
 		770BD17026C8B3B800E8CD4F /* Mode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mode.swift; sourceTree = "<group>"; };
 		770BD17226C8B3C800E8CD4F /* Key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Key.swift; sourceTree = "<group>"; };
 		770BD17426C8B3D600E8CD4F /* Describable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Describable.swift; sourceTree = "<group>"; };
-		770BD17626C8B40200E8CD4F /* Hand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hand.swift; sourceTree = "<group>"; };
 		770BD17826C8B41000E8CD4F /* Rhythm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rhythm.swift; sourceTree = "<group>"; };
 		770BD17A26C8B42300E8CD4F /* Scale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scale.swift; sourceTree = "<group>"; };
 		770BD17C26C8B43500E8CD4F /* TimeSignature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSignature.swift; sourceTree = "<group>"; };
-		770BD17E26C8B49D00E8CD4F /* Articulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Articulation.swift; sourceTree = "<group>"; };
-		770BD18026C8B4AE00E8CD4F /* Dynamics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamics.swift; sourceTree = "<group>"; };
 		770BD18226C8B4BB00E8CD4F /* Interval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interval.swift; sourceTree = "<group>"; };
 		770BD18426C915F000E8CD4F /* PianoKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoKey.swift; sourceTree = "<group>"; };
 		770BD18626C9165B00E8CD4F /* RoundedCornerShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerShape.swift; sourceTree = "<group>"; };
@@ -56,6 +57,13 @@
 		770BD22626CDDA1100E8CD4F /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
 		770BD22826CDDBF800E8CD4F /* ModifierView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifierView.swift; sourceTree = "<group>"; };
 		770BD22A26CDDC9700E8CD4F /* ModifierHandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifierHandView.swift; sourceTree = "<group>"; };
+		770BD22C26CE199B00E8CD4F /* ScaleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleView.swift; sourceTree = "<group>"; };
+		770BD23026CE205000E8CD4F /* Arpeggio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arpeggio.swift; sourceTree = "<group>"; };
+		770BD23226CE209900E8CD4F /* DisplayMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayMode.swift; sourceTree = "<group>"; };
+		770BD23426CE20AD00E8CD4F /* Root.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Root.swift; sourceTree = "<group>"; };
+		770BD23626CE210500E8CD4F /* HandType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandType.swift; sourceTree = "<group>"; };
+		770BD23826CE26FE00E8CD4F /* DisplayModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayModeView.swift; sourceTree = "<group>"; };
+		770BD23A26CE2A0800E8CD4F /* ArpeggioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArpeggioView.swift; sourceTree = "<group>"; };
 		774AD97726C7459B00B41E6A /* PianoPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PianoPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		774AD97A26C7459B00B41E6A /* PianoPracticeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoPracticeApp.swift; sourceTree = "<group>"; };
 		774AD97C26C7459B00B41E6A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -80,7 +88,9 @@
 		770BD16B26C8B31000E8CD4F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				770BD23A26CE2A0800E8CD4F /* ArpeggioView.swift */,
 				774AD97C26C7459B00B41E6A /* ContentView.swift */,
+				770BD23826CE26FE00E8CD4F /* DisplayModeView.swift */,
 				770BD22A26CDDC9700E8CD4F /* ModifierHandView.swift */,
 				770BD16726C8AAA400E8CD4F /* ModifiersListView.swift */,
 				770BD22826CDDBF800E8CD4F /* ModifierView.swift */,
@@ -89,6 +99,7 @@
 				770BD18426C915F000E8CD4F /* PianoKey.swift */,
 				770BD18826C9175500E8CD4F /* PianoOctave.swift */,
 				770BD18626C9165B00E8CD4F /* RoundedCornerShape.swift */,
+				770BD22C26CE199B00E8CD4F /* ScaleView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -106,17 +117,18 @@
 		770BD16D26C8B37400E8CD4F /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				770BD17E26C8B49D00E8CD4F /* Articulation.swift */,
-				770BD18026C8B4AE00E8CD4F /* Dynamics.swift */,
-				770BD17626C8B40200E8CD4F /* Hand.swift */,
+				770BD23026CE205000E8CD4F /* Arpeggio.swift */,
+				770BD23226CE209900E8CD4F /* DisplayMode.swift */,
+				770BD23626CE210500E8CD4F /* HandType.swift */,
 				770BD18226C8B4BB00E8CD4F /* Interval.swift */,
 				770BD17226C8B3C800E8CD4F /* Key.swift */,
 				770BD17026C8B3B800E8CD4F /* Mode.swift */,
+				770BD22626CDDA1100E8CD4F /* Modifiers.swift */,
 				770BD16E26C8B39F00E8CD4F /* Note.swift */,
 				770BD17826C8B41000E8CD4F /* Rhythm.swift */,
+				770BD23426CE20AD00E8CD4F /* Root.swift */,
 				770BD17A26C8B42300E8CD4F /* Scale.swift */,
 				770BD17C26C8B43500E8CD4F /* TimeSignature.swift */,
-				770BD22626CDDA1100E8CD4F /* Modifiers.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -230,17 +242,19 @@
 			files = (
 				770BD22926CDDBF800E8CD4F /* ModifierView.swift in Sources */,
 				770BD17526C8B3D600E8CD4F /* Describable.swift in Sources */,
-				770BD17F26C8B49D00E8CD4F /* Articulation.swift in Sources */,
+				770BD23126CE205000E8CD4F /* Arpeggio.swift in Sources */,
 				770BD16826C8AAA400E8CD4F /* ModifiersListView.swift in Sources */,
 				770BD17926C8B41000E8CD4F /* Rhythm.swift in Sources */,
 				770BD17326C8B3C800E8CD4F /* Key.swift in Sources */,
 				770BD22B26CDDC9700E8CD4F /* ModifierHandView.swift in Sources */,
 				770BD18526C915F000E8CD4F /* PianoKey.swift in Sources */,
-				770BD17726C8B40200E8CD4F /* Hand.swift in Sources */,
+				770BD23526CE20AD00E8CD4F /* Root.swift in Sources */,
+				770BD23726CE210500E8CD4F /* HandType.swift in Sources */,
+				770BD23326CE209900E8CD4F /* DisplayMode.swift in Sources */,
 				774AD97D26C7459B00B41E6A /* ContentView.swift in Sources */,
 				774AD98E26C75D4700B41E6A /* Random.swift in Sources */,
 				770BD18326C8B4BB00E8CD4F /* Interval.swift in Sources */,
-				770BD18126C8B4AE00E8CD4F /* Dynamics.swift in Sources */,
+				770BD23B26CE2A0800E8CD4F /* ArpeggioView.swift in Sources */,
 				774AD97B26C7459B00B41E6A /* PianoPracticeApp.swift in Sources */,
 				770BD22726CDDA1100E8CD4F /* Modifiers.swift in Sources */,
 				770BD18926C9175500E8CD4F /* PianoOctave.swift in Sources */,
@@ -250,7 +264,9 @@
 				774AD98C26C75CF700B41E6A /* NotesList.swift in Sources */,
 				770BD16A26C8AAB800E8CD4F /* NextButton.swift in Sources */,
 				770BD17B26C8B42300E8CD4F /* Scale.swift in Sources */,
+				770BD22D26CE199B00E8CD4F /* ScaleView.swift in Sources */,
 				770BD16626C8AA8F00E8CD4F /* Color.swift in Sources */,
+				770BD23926CE26FE00E8CD4F /* DisplayModeView.swift in Sources */,
 				770BD17D26C8B43500E8CD4F /* TimeSignature.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

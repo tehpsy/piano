@@ -1,41 +1,42 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var scale = Scale.random()
+    @ObservedObject var root = Root(
+        scale: Scale.random(),
+        arpeggio: Arpeggio.random(),
+        displayMode: .scale
+    )
 
     var body: some View {
         NavigationView {
-            ZStack {
-                VStack(alignment: .leading) {
+            VStack {
+                MainView(root: root)
+                    .padding()
 
-                    Text(scale.key.description)
-                        .font(.title2).fontWeight(.bold)
-                        .padding()
+                Spacer()
 
-                    NotesList(scale: $scale)
-                        .font(.title3)
-                        .padding()
+                DisplayModeView(displayMode: $root.displayMode)
 
-                    Text("\(scale.octaves) octaves")
-                        .padding()
-
-                    Divider()
-
-                    if !scale.modifiers.isEmpty {
-                        ModifiersListView(scale: $scale)
-                    }
-
+                HStack() {
                     Spacer()
-
-                    HStack() {
-                        Spacer()
-                        NextButton(scale: $scale)
-                        Spacer()
-                    }
+                    NextButton(root: root)
+                    Spacer()
                 }
-                .padding()
+                    .padding()
             }
-            .navigationTitle("UpScale")
+        }
+    }
+}
+
+struct MainView: View {
+    @ObservedObject var root: Root
+
+    var body: some View {
+        switch root.displayMode {
+        case .scale:
+            ScaleView(scale: $root.scale)
+        case .arpeggio:
+            ArpeggioView(arpeggio: $root.arpeggio)
         }
     }
 }
