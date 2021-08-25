@@ -64,6 +64,7 @@
 		770BD23626CE210500E8CD4F /* HandType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandType.swift; sourceTree = "<group>"; };
 		770BD23826CE26FE00E8CD4F /* DisplayModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayModeView.swift; sourceTree = "<group>"; };
 		770BD23A26CE2A0800E8CD4F /* ArpeggioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArpeggioView.swift; sourceTree = "<group>"; };
+		770BD23C26CE341400E8CD4F /* PianoPractice.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PianoPractice.entitlements; sourceTree = "<group>"; };
 		774AD97726C7459B00B41E6A /* PianoPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PianoPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		774AD97A26C7459B00B41E6A /* PianoPracticeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoPracticeApp.swift; sourceTree = "<group>"; };
 		774AD97C26C7459B00B41E6A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -152,6 +153,7 @@
 		774AD97926C7459B00B41E6A /* PianoPractice */ = {
 			isa = PBXGroup;
 			children = (
+				770BD23C26CE341400E8CD4F /* PianoPractice.entitlements */,
 				774AD97E26C7459D00B41E6A /* Assets.xcassets */,
 				770BD16C26C8B32400E8CD4F /* Extensions */,
 				774AD98326C7459D00B41E6A /* Info.plist */,
@@ -395,6 +397,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PianoPractice/PianoPractice.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"PianoPractice/Preview Content\"";
 				DEVELOPMENT_TEAM = 7VYBQV3T2Q;
@@ -407,8 +410,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.novationmusic.PianoPractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
 			name = Debug;
 		};
@@ -417,6 +421,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PianoPractice/PianoPractice.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"PianoPractice/Preview Content\"";
 				DEVELOPMENT_TEAM = 7VYBQV3T2Q;
@@ -429,8 +434,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.novationmusic.PianoPractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
 			name = Release;
 		};
