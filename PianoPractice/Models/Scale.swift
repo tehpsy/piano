@@ -4,10 +4,11 @@ struct Scale: Random {
     let modifiers: [Modifier]
 
     static func random() -> Self {
+        let key = Key.random()
         return Scale(
-            key: Key.random(),
+            key: key,
             octaves: Int.random(in: (2...4)),
-            modifiers: Modifiers.random()
+            modifiers: Modifiers.random(for: key.mode)
         )
     }
 }

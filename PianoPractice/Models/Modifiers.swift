@@ -15,22 +15,32 @@ let ModifierKeyRelativeStaccato = "Staccato"
 let ModifierKeyRelativeForte = "Forte"
 let ModifierKeyRelativeContraryMotion = "Contrary Motion"
 
-enum Modifiers {
-    static func random() -> [Modifier] {
-        let allModifiers = [
-            Modifier(hand: HandType.random(), id: ModifierKeyRelativeMinor),
-            Modifier(hand: HandType.random(), id: ModifierKeyRelativeStaccato),
-            Modifier(hand: HandType.random(), id: ModifierKeyRelativeForte),
-            Modifier(hand: nil, id: ModifierKeyRelativeContraryMotion),
-        ].shuffled()
+extension Bool {
+    static func random(_ value: Double) -> Bool {
+        return value > Double.random(in: 0..<1)
+    }
+}
 
-        let rand = Int.random(in: 0..<10)
-        if rand < 1 {
-            return Array(allModifiers[..<2])
-        } else if rand < 3 {
-            return Array(allModifiers[..<1])
-        } else {
-            return []
+enum Modifiers {
+    static func random(for mode: Mode) -> [Modifier] {
+        var modifiers: [Modifier] = []
+
+        if mode == .major, Bool.random(0.2) {
+            modifiers.append(Modifier(hand: HandType.random(), id: ModifierKeyRelativeMinor))
         }
+
+        if !modifiers.contains(where: { $0.id == ModifierKeyRelativeMinor }), Bool.random(0.1) {
+            modifiers.append(Modifier(hand: nil, id: ModifierKeyRelativeContraryMotion))
+        }
+
+        if (modifiers.isEmpty && Bool.random(0.5)) || (!modifiers.isEmpty && Bool.random(0.3)) {
+            let genericModifiers = [
+                Modifier(hand: HandType.random(), id: ModifierKeyRelativeStaccato),
+                Modifier(hand: HandType.random(), id: ModifierKeyRelativeForte),
+            ]
+            modifiers.append(genericModifiers.randomElement()!)
+        }
+
+        return modifiers
     }
 }
