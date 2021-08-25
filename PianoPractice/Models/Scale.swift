@@ -6,7 +6,7 @@ struct Scale: Random {
     static func random() -> Self {
         return Scale(
             key: Key.random(),
-            octaves: Int.random(in: (1...3)),
+            octaves: Int.random(in: (2...4)),
             modifiers: Modifiers.random()
         )
     }
