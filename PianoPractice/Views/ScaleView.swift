@@ -6,12 +6,11 @@ struct ScaleView: View {
     var body: some View {
         ZStack {
             VStack(alignment: .leading) {
-
                 Text(scale.key.description)
                     .font(.title2).fontWeight(.bold)
                     .padding()
 
-                NotesList(scale: $scale)
+                NotesList(scale: scale, arpeggio: nil)
                     .font(.title3)
                     .padding()
 
@@ -21,7 +20,7 @@ struct ScaleView: View {
                 Divider()
 
                 if !scale.modifiers.isEmpty {
-                    ModifiersListView(scale: $scale)
+                    ModifiersListView(scale: scale, arpeggio: nil)
                 }
 
                 Spacer()

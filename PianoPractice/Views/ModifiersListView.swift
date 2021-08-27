@@ -1,7 +1,11 @@
 import SwiftUI
 
 struct ModifiersListView: View {
-    @Binding var scale: Scale
+    let modifiers: [Modifier]
+
+    init(scale: Scale?, arpeggio: Arpeggio?) {
+        self.modifiers = scale?.modifiers ?? arpeggio?.modifiers ?? []
+    }
 
     var body: some View {
         VStack {
@@ -19,7 +23,7 @@ struct ModifiersListView: View {
             }
                 .padding()
 
-            List(scale.modifiers, id: \.self) { modifier in
+            List(modifiers, id: \.self) { modifier in
                 if let dualText = modifier.dualText {
                     ModifierView(left: dualText.0, right: dualText.1)
                 } else {
@@ -33,9 +37,7 @@ struct ModifiersListView: View {
 
 struct ModifiersListView_Previews: PreviewProvider {
     static var previews: some View {
-        ModifiersListView(
-            scale: .constant(Scale.random())
-        )
-        .preferredColorScheme(.dark)
+        ModifiersListView(scale: Scale.random(), arpeggio: nil)
+            .preferredColorScheme(.dark)
     }
 }

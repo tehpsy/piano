@@ -37,6 +37,7 @@
 		774AD98226C7459D00B41E6A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 774AD98126C7459D00B41E6A /* Preview Assets.xcassets */; };
 		774AD98C26C75CF700B41E6A /* NotesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774AD98B26C75CF700B41E6A /* NotesList.swift */; };
 		774AD98E26C75D4700B41E6A /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774AD98D26C75D4700B41E6A /* Random.swift */; };
+		7785181026D6374E006FEACF /* Bool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7785180F26D6374E006FEACF /* Bool.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +74,7 @@
 		774AD98326C7459D00B41E6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		774AD98B26C75CF700B41E6A /* NotesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesList.swift; sourceTree = "<group>"; };
 		774AD98D26C75D4700B41E6A /* Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
+		7785180F26D6374E006FEACF /* Bool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bool.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				770BD16526C8AA8F00E8CD4F /* Color.swift */,
 				770BD17426C8B3D600E8CD4F /* Describable.swift */,
 				774AD98D26C75D4700B41E6A /* Random.swift */,
+				7785180F26D6374E006FEACF /* Bool.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 				770BD16F26C8B39F00E8CD4F /* Note.swift in Sources */,
 				770BD17126C8B3B800E8CD4F /* Mode.swift in Sources */,
 				774AD98C26C75CF700B41E6A /* NotesList.swift in Sources */,
+				7785181026D6374E006FEACF /* Bool.swift in Sources */,
 				770BD16A26C8AAB800E8CD4F /* NextButton.swift in Sources */,
 				770BD17B26C8B42300E8CD4F /* Scale.swift in Sources */,
 				770BD22D26CE199B00E8CD4F /* ScaleView.swift in Sources */,

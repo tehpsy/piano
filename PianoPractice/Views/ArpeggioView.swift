@@ -5,8 +5,28 @@ struct ArpeggioView: View {
 
     var body: some View {
         ZStack {
+
             VStack(alignment: .leading) {
-                Text("")
+                VStack(alignment: .leading) {
+                    Text(arpeggio.key.description)
+                        .font(.title2).fontWeight(.bold)
+                        .padding()
+
+                    NotesList(scale: nil, arpeggio: arpeggio)
+                        .font(.title3)
+                        .padding()
+
+                    Text("\(arpeggio.octaves) octaves")
+                        .padding()
+
+                    Divider()
+
+                    if !arpeggio.modifiers.isEmpty {
+                        ModifiersListView(scale: nil, arpeggio: arpeggio)
+                    }
+
+                    Spacer()
+                }
             }
             .navigationTitle("Arpeggio")
         }
